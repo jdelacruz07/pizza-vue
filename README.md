@@ -1,24 +1,16 @@
-# pizza-vue
+# pizza-client
 
 ## Project setup
 ```
-npm install
+docker build -t pizza-vue . ; 
 ```
 
-### Compiles and hot-reloads for development
+### Run container
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+docker run -it p 8080:8080 --rm --name pizza-client pizza-vue; 
 ```
 
-### Lints and fixes files
+### Run test, folder src/components
 ```
-npm run lint
+testcafe chrome test.js;
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
