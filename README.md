@@ -1,4 +1,4 @@
-# pizza-client
+# Project pizza with Vue
 
 ## Project setup
 ```
@@ -7,7 +7,7 @@ docker build -t pizza-vue . ;
 
 ### Run container
 ```
-docker run -it p 8080:8080 --rm --name pizza-client pizza-vue; 
+docker run -it -p 8080:8080 --rm --name pizza-client pizza-vue; 
 ```
 
 ### Run test, folder src/components
